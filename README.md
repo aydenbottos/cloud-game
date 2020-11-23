@@ -1,31 +1,11 @@
-# CloudRetro
+# RetroOnline
 
-[![Build](https://github.com/aydenbottos/cloud-game/workflows/build/badge.svg)](https://github.com/aydenbottos/cloud-game/actions?query=workflow:build)
-[![Latest release](https://img.shields.io/github/v/release/aydenbottos/cloud-game.svg)](https://github.com/aydenbottos/cloud-game/releases/latest)
-
-**Open-source Cloud Gaming Service For Retro Games**  
-**Video demo**: https://www.youtube.com/watch?v=GUBrJGAxZZg  
-**Technical wrapup**: https://webrtchacks.com/open-source-cloud-gaming-with-webrtc/  
-**CloudMorph**: [https://github.com/giongto35/cloud-morph](https://github.com/giongto35/cloud-morph): My current focus on generic solution for cloudgaming
+**Open-source Cloud Gaming Service For Retro Games**
 
 ## Introduction
-CloudRetro provides an open-source cloud gaming platform for retro games. It started as an experiment for testing cloud gaming performance with [WebRTC](https://github.com/pion/webrtc/) and [libretro](https://www.libretro.com/), and now it aims to deliver the most modern and convenient gaming experience through the technology.
+RetroOnline provides an open-source cloud gaming platform for retro games. It started as an experiment for testing cloud gaming performance with [WebRTC](https://github.com/pion/webrtc/) and [libretro](https://www.libretro.com/), and now it aims to deliver the most modern and convenient gaming experience through the technology.
 
 Theoretically, in cloud gaming, games are run on remote servers and media are streamed to the player optimally to ensure the most comfortable user interaction. It opens the ability to play any retro games on web-browser directly, which are fully compatible with multi-platform like Desktop, Android, ~~IOS~~.
-
-## Announcement
-**(Currently, I'm working on [CloudMorph](https://github.com/giongto35/cloud-morph): It offers more generic solution to run any offline games/application on browser in Cloud Gaming approach: [https://github.com/giongto35/cloud-morph](https://github.com/giongto35/cloud-morph))**
-
-## Try the service at
-Single play: **[http://cloudretro.io](http://cloudretro.io)**  
-Direct play an existing game: **[Pokemon Emerald](https://cloudretro.io/?id=4a5073a4b05ad0fe___Pokemon%20-%20Emerald%20Version%20(U))**
-
-\*In ideal network condition and less resource contention on servers, the game will run smoothly as in the video demo. Because I only hosted the platform on limited servers in US East, US West, Eu, Singapore, you may experience some latency issues + connection problem. You can try hosting the service following the instruction the next section to have a better sense of performance.
-
-|                   Screenshot                   |                   Screenshot                   |
-| :--------------------------------------------: | :--------------------------------------------: |
-| ![screenshot](docs/img/landing-page-ps-hm.png) | ![screenshot](docs/img/landing-page-ps-x4.png) |
-|  ![screenshot](docs/img/landing-page-gb.png)   | ![screenshot](docs/img/landing-page-front.png) |
 
 ## Feature
 1. **Cloud gaming**: Game logic and storage is hosted on cloud service. It reduces the cumbersome of game initialization. Images and audio are streamed to user in the most optimal way using advanced encoding technology.
@@ -82,48 +62,3 @@ Docker for Windows is not supposed to work with provided configuration, use WSL2
 |              High level              |               Worker internal               |
 | :----------------------------------: | :-----------------------------------------: |
 | ![screenshot](docs/img/overview.png) | ![screenshot](docs/img/worker-internal.png) |
-
-## FAQ
-- [FAQ](https://github.com/giongto35/cloud-game/wiki/FAQ)
-
-## Crowd Play, play game together
-By clicking these deep link, you can join the game directly and play it together with other people.
-- [Play Pokemon Emerald](http://cloudretro.io/?id=652e45d78d2b91cd%7CPokemon%20-%20Emerald%20Version%20%28U%29)
-- [Fire Emblem](http://cloudretro.io/?id=314ea4d7f9c94d25___Fire%20Emblem%20%28U%29%20%5B%21%5D)
-- [Samurai Showdown 4](https://cloudretro.io/?id=733c73064c368832___samsho4)
-- [Metal Slug X](https://cloudretro.io/?id=2a9c4b3f1c872d28___mslugx)
-
-And you can host the new game by yourself by accessing [cloudretro.io](http://cloudretro.io) and click "share" button to generate a deeplink to your current game.
-
-<p align="center">
-  <img width="420" height="300" src="docs/img/multiplatform.png"> <br>
-Synchronize a game session on multiple devices
-</p>
-
-## Contribution
-We are very much thankful to everyone who contributes to the project:
-
-- [88hcsif](https://github.com/88hcsif)
-- [sadlil](https://github.com/sadlil)
-- [sergystepanov](https://github.com/sergystepanov/)
-
-## Credits
-
-* *Pion* Webrtc team for the incredible Golang Webrtc library and their supports https://github.com/pion/webrtc/.
-* *libretro/kivutar* Golang libretro https://github.com/libretro/go-nanoarch and https://www.libretro.com/.
-* *gen2brain* for the h264 go encoder https://github.com/gen2brain/x264-go
-* *poi5305* for the video encoding https://github.com/poi5305/go-yuv2webRTC.
-* *fogleman* for the NES emulator https://github.com/fogleman/nes.
-
-## Main Contributor
-
-Sergy Stepanov  
-https://github.com/sergystepanov/
-
-## Author
-
-Nguyen Huu Thanh  
-https://www.linkedin.com/in/huuthanhnguyen/
-
-Tri Dang Minh  
-https://trich.im
