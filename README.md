@@ -1,7 +1,7 @@
 # CloudRetro
 
-[![Build](https://github.com/giongto35/cloud-game/workflows/build/badge.svg)](https://github.com/giongto35/cloud-game/actions?query=workflow:build)
-[![Latest release](https://img.shields.io/github/v/release/giongto35/cloud-game.svg)](https://github.com/giongto35/cloud-game/releases/latest)
+[![Build](https://github.com/aydenbottos/cloud-game/workflows/build/badge.svg)](https://github.com/aydenbottos/cloud-game/actions?query=workflow:build)
+[![Latest release](https://img.shields.io/github/v/release/aydenbottos/cloud-game.svg)](https://github.com/aydenbottos/cloud-game/releases/latest)
 
 **Open-source Cloud Gaming Service For Retro Games**  
 **Video demo**: https://www.youtube.com/watch?v=GUBrJGAxZZg  
