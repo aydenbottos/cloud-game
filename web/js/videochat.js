@@ -1,4 +1,5 @@
 // Generate random room name if needed
+const drone = new ScaleDrone('558QL8Y1xngrAZCb');
 const roomName = localStorage.getItem('roomID')
 const configuration = { iceServers: [ { urls: ["turn:numb.viagenie.ca:3478","stun:numb.viagenie.ca:3478"], username: "aydenbottos12@gmail.com", credential: "ayden2006" } ] };
 let chatRoom;
