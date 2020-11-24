@@ -1,7 +1,7 @@
 // Generate random room name if needed
 const roomName = localStorage.getItem('roomID')
 const configuration = { iceServers: [ { urls: ["turn:numb.viagenie.ca:3478","stun:numb.viagenie.ca:3478"], username: "aydenbottos12@gmail.com", credential: "ayden2006" } ] };
-let room;
+let chatRoom;
 let pc;
 
 
@@ -14,15 +14,15 @@ drone.on('open', error => {
   if (error) {
     return console.error(error);
   }
-  room = drone.subscribe(roomName);
-  room.on('open', error => {
+  chatRoom = drone.subscribe(roomName);
+  Chatroom.on('open', error => {
     if (error) {
       onError(error);
     }
   });
   // We're connected to the room and received an array of 'members'
   // connected to the room (including us). Signaling server is ready.
-  room.on('members', members => {
+  chatRoom.on('members', members => {
     console.log('MEMBERS', members);
     // If we are the second user to connect to the room we will be creating the offer
     const isOfferer = members.length === 2;
@@ -75,7 +75,7 @@ function startWebRTC(isOfferer) {
   }, onError);
 
   // Listen to signaling data from Scaledrone
-  room.on('data', (message, client) => {
+  chatRoom.on('data', (message, client) => {
     // Message was sent by us
     if (client.id === drone.clientId) {
       return;
